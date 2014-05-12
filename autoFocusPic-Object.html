@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+body { background:#f8f8f8; }
+ul { padding:0; margin:0; }
+li { list-style:none; }
+#div1 { border:1px solid #333; margin:0 auto; position:relative; background:url(img/loader_ico.gif) no-repeat center; }
+#div1 ul { height:20px; position:absolute; bottom:-36px; left:110px; }
+#div1 li { width:20px; height:20px; background:#000; float:left; margin-right:2px; color:#fff; text-align:center; position:relative; }
+#div1 .active { background:red; } 
+#div1 li img { width:120px; height:80px; position:absolute; left:-60px; top:-120px; border:10px solid #fff; display:none; }
+#div1 li span { position:absolute; left:0; top:-20px; width:10px; height:5px; background:url(img/ico.gif) no-repeat; overflow:hidden; display:none; }
+#div1 a { width:40px; height:40px; background:#000; border:10px solid #fff; position:absolute; top:75px; filter:alpha(opacity:50); opacity:0.5; text-decoration:none; color:#000; font-size:30px; text-align:center; line-height:40px; font-weight:bold; }
+#div1 a:hover { filter:alpha(opacity:80); opacity:0.8; }
+#div1 .prev { left:10px; }
+#div1 .next { right:10px; }
+</style>
+
+</head>
+
+<body>
+
+<div id="div1">
+	<img src="" />
+  <ul></ul>
+</div>
+
+</body>
+</html>
+ <script type="text/javascript" src="js/autoPlay-object.js"></script>
+<script type="text/javascript">
+window.onload=function(){
+
+  var div1=document.getElementById('div1');
+  var _AutoPlay= new AutoPlay(div1);
+
+  _AutoPlay.isAuto();  //是否自动播放
+  //_AutoPlay.isBtn(); //是否显示左右按钮
+  //_AutoPlay.isPic(); //是否显示缩略图
+}
+
+</script>
